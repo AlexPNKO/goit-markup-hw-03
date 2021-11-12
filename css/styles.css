@@ -27,16 +27,16 @@ body {
 }
 /*-------------------------------------STUDIO---------------*/
 /*---------------HEADER---------------*/
-.page-header{
+.page-header {
   background-color: #ffffff;
 }
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1400px;
+  width: 1170px;
   outline: 2px solid #2196f3;
 }
-}
+
 .header-logo {
   font-family: Raleway;
   font-weight: 700;
