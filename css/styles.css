@@ -40,14 +40,15 @@ body {
 }
 /*-------------------------------------STUDIO---------------*/
 /*----------------------------HEADER----------------------------*/
-.page-header {
+.header {
   background-color: #ffffff;
+  border: 1px solid #eeeeee;
 }
 .main-nav {
   display: flex;
   align-items: center;
 }
-.webstudio {
+.header .title {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -55,7 +56,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--webstudio-color);
 }
-.webstudio-header-studio {
+.header .title-studio {
   color: #212121;
 }
 .menu-nav {
@@ -236,9 +237,18 @@ body {
   color: var(--employe-profession-color);
 }
 /*----------------------------ADRESS----------------------------*/
-.webstudio-footer {
+.footer {
+  background: #2f303a;
+}
+.adress .container {
+  padding-top: 30px;
+}
+.footer .title {
+  font-style: normal;
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -246,12 +256,10 @@ body {
   letter-spacing: 0.03em;
   color: var(--webstudio-color);
 }
-.webstudio-footer-studio {
+.footer .title-studio {
   color: #ffffff;
 }
-.adress .container {
-  padding-top: 30px;
-}
+
 .adress-list .item {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -267,8 +275,17 @@ body {
 .geo {
   color: var(--adress-geo-color);
 }
+.adress-list {
+  padding-bottom: 60px;
+}
+.adress-list .item + .item {
+  margin-top: 9px;
+}
 /*-------------------------------------PORTFOLIO------------*/
 /*----------------------------MENU----------------------------*/
+.menu {
+  background: #ffffff;
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -282,7 +299,6 @@ body {
   margin: -1px;
 }
 .menu-list {
-  background-color: lightblue;
   margin-bottom: 16px;
   padding-top: 94px;
   padding-bottom: 34px;
