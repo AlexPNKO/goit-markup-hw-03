@@ -106,7 +106,7 @@ body {
   color: #2196f3;
 }
 /*----------------------------HERO----------------------------*/
-.hero {
+.hero .container {
   background: #2f303a;
   text-align: center;
 }
@@ -186,7 +186,7 @@ body {
   margin-left: 30px;
 }
 /*----------------------------TEAM----------------------------*/
-.team {
+.team .container {
   padding-top: 94px;
   padding-bottom: 94px;
   background: #f5f4fa;
@@ -236,11 +236,25 @@ body {
   color: var(--employe-profession-color);
 }
 /*----------------------------ADRESS----------------------------*/
+.webstudio-footer {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--webstudio-color);
+}
 .webstudio-footer-studio {
   color: #ffffff;
 }
-.adress {
-  background: #2f303a;
+.adress .container {
+  padding-top: 30px;
+}
+.adress-list .item {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .adress-list .link {
   font-style: normal;
@@ -254,9 +268,6 @@ body {
   color: var(--adress-geo-color);
 }
 /*-------------------------------------PORTFOLIO------------*/
-.page-header {
-  background: #f5f4fa;
-}
 /*----------------------------MENU----------------------------*/
 .visually-hidden {
   position: absolute;
@@ -304,11 +315,14 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*----------------------------ALL----------------------------*/
+.all-list {
+  padding-bottom: 94px;
+}
 .all-list .item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  background: #eeeeee;
+  border: 1px solid #eeeeee;
 }
 .all-list .item:nth-child(3n) {
   margin-right: 0px;
@@ -321,14 +335,23 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.all-item .title {
+.all-list .title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  padding-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--all-item-name-color);
 }
-.all-item .text {
+.all-list .text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  padding-left: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
