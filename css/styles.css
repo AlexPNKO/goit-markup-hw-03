@@ -19,7 +19,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-.list {
+.ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -38,11 +38,17 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
 /*-------------------------------------STUDIO---------------*/
 /*----------------------------HEADER----------------------------*/
 .header {
   background-color: #ffffff;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .main-nav {
   display: flex;
@@ -67,11 +73,13 @@ body {
   margin-left: 50px;
 }
 .menu-nav .item .link {
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--menu-item-color);
+  display: block;
 }
 .menu-nav .item.link.current {
   color: #2196f3;
@@ -108,13 +116,11 @@ body {
 }
 /*----------------------------HERO----------------------------*/
 .hero {
+  padding: 200px 0;
   background: #2f303a;
   text-align: center;
 }
 .hero .title {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -134,11 +140,23 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  margin-bottom: 200px;
 }
 /*----------------------------FEATURES----------------------------*/
-.features {
+.section {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section .hidden-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .features-list {
   display: flex;
@@ -148,7 +166,7 @@ body {
 }
 .features-list .title {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -158,7 +176,7 @@ body {
 }
 .features-list .text {
   margin-bottom: 0px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -166,8 +184,7 @@ body {
 }
 /*----------------------------ABOUT----------------------------*/
 .about {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 0px;
 }
 .about .title {
   margin-top: 0px;
@@ -180,6 +197,10 @@ body {
   color: var(--about-title-color);
   margin-bottom: 50px;
 }
+.img {
+  display: block;
+  max-width: 100%;
+}
 .about-list {
   display: flex;
 }
@@ -188,12 +209,10 @@ body {
 }
 /*----------------------------TEAM----------------------------*/
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background: #f5f4fa;
 }
 .team-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -214,10 +233,7 @@ body {
   margin-left: 30px;
 }
 .team-list .title {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -226,29 +242,28 @@ body {
   color: var(--employe-title-color);
 }
 .team-list .text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 30px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--employe-profession-color);
 }
+.team .employe {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /*----------------------------ADRESS----------------------------*/
 .footer {
+  padding: 60px 0;
   background: #2f303a;
 }
 .adress .container {
   padding-top: 30px;
 }
 .footer .title {
+  margin-bottom: 20px;
   font-style: normal;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 60px;
-  padding-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -275,15 +290,13 @@ body {
 .geo {
   color: var(--adress-geo-color);
 }
-.adress-list {
-  padding-bottom: 60px;
-}
+
 .adress-list .item + .item {
   margin-top: 9px;
 }
 /*-------------------------------------PORTFOLIO------------*/
 /*----------------------------MENU----------------------------*/
-.menu {
+.section {
   background: #ffffff;
 }
 .visually-hidden {
@@ -299,9 +312,7 @@ body {
   margin: -1px;
 }
 .menu-list {
-  margin-bottom: 16px;
-  padding-top: 94px;
-  padding-bottom: 34px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -331,14 +342,10 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*----------------------------ALL----------------------------*/
-.all-list {
-  padding-bottom: 94px;
-}
 .all-list .item {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
 }
 .all-list .item:nth-child(3n) {
   margin-right: 0px;
@@ -351,11 +358,10 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.all-list .feature {
+  padding: 20px 24px;
+}
 .all-list .title {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 20px;
-  padding-bottom: 4px;
   padding-left: 24px;
   font-weight: 700;
   font-size: 18px;

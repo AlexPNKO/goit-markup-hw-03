@@ -18,13 +18,13 @@
          <!----------------------------HEADER---------------------------->
          <header class="header">
              <nav class="container main-nav">
-                 <a class="title no-padding"><h5 lang="en">Web<span class="title-studio">Studio</span></h5></a>
-                 <ul class="menu-nav list">
+                 <a class="title">Web<span class="title-studio">Studio</span></a>
+                 <ul class="menu-nav">
                      <li class="item"><a href="" class="item link current">Студия</a></li>
                      <li class="item"><a href="./portfolio.html" class="item link">Портфолио</a></li>
                      <li class="item"><a href="" class="item link">Контакты</a></li>
                  </ul>
-                 <ul class="header-list list">
+                 <ul class="header-list">
                      <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                      <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                  </ul>
@@ -32,17 +32,16 @@
          </header>
          <main>
              <!----------------------------HERO---------------------------->
-             <section class="hero no-padding list">
+             <section class="hero">
                  <div class="container">
                  <h1 class="title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                 <ul class="list">
-                 <li><a class="button">Заказать услугу</a></li>
-                </ul>
+                <button class="button" type="button">Заказать услугу</button>
                  </div>
              </section>
              <!----------------------------FEATURES---------------------------->
-             <section class="features no-padding">
+             <section class="section">
                  <div class="container">
+                     <h2 class="hidden-title">Наши преимущества</h2>
                  <ul class="features-list list">
                     <li class="item">
                         <h3 class="title">Внимание к деталям</h3>
@@ -66,7 +65,7 @@
                  </div>
              </section>
              <!----------------------------ABOUT---------------------------->
-             <section class="about no-padding">
+             <section class="about section">
                  <div class="container">
                   <h2 class="title">Чем мы занимаемся</h2>
                   <ul class="about-list list">
@@ -83,29 +82,37 @@
                  </div> 
              </section>
              <!----------------------------TEAM---------------------------->
-             <section class="team no-padding">
+             <section class="team section">
                 <div class="container">
                  <h2 class="team-title">Наша команда</h2>
                  <ul class="team-list list">
                     <li class="item">
                         <img src="./images/igor-img.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                        <div class="employe">
                         <h3 class="title">Игорь Демьяненко</h3>
                         <p class="text" lang="en">Product Designer</p>
+                        </div>
                     </li>
                     <li class="item">
                         <img src="./images/olga-img.jpg" alt="Ольга Репина" width="270" height="260">
+                        <div class="employe">
                         <h3 class="title">Ольга Репина</h3>
                         <p class="text" lang="en">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="item">
                         <img src="./images/nikolai-img.jpg" alt="Николай Тарасов" width="270" height="260">
+                        <div class="employe">
                         <h3 class="title">Николай Тарасов</h3>
                         <p class="text" lang="en">Marketing</p>
+                        </div>
                     </li>
                     <li class="item">
                         <img src="./images/mikael-img.jpg" alt="Михаил Ермаков" width="270" height="260">
+                        <div class="employe">
                         <h3 class="title">Михаил Ермаков</h3>
                         <p class="text" lang="en">UI Designer</p>
+                        </div>
                     </li>
                  </ul>
                 </div>
@@ -114,8 +121,9 @@
             <!----------------------------ADRESS---------------------------->
          <footer class="footer ">
              <div class="container">
-                    <h5 class="title" lang="en">Web<span class="title-studio">Studio</span></h5>
-                    <ul class="adress-list list">
+                    <a class="title">Web<span class="title-studio">Studio</span></a>
+                    <address>
+                    <ul class="adress-list">
                         <li class="item">
                             <a class="link" href="https://goo.gl/maps/WsUC1m7or1tppbLx8" target="blank"
                                 rel="noopener noreferrer"><span class="geo">г. Киев, пр-т Леси Украинки, 26 </span></a>
@@ -127,6 +135,7 @@
                             <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
+                    </address>
              </div>
          </footer>
      </body>
