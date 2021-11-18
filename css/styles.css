@@ -19,7 +19,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-.ul {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -261,8 +261,7 @@ p {
 .adress .container {
   padding-top: 30px;
 }
-.footer .title {
-  margin-bottom: 20px;
+footer .title {
   font-style: normal;
   font-family: Raleway;
   font-weight: 700;
@@ -276,7 +275,7 @@ p {
 }
 
 .adress-list .item {
-  margin-top: 0px;
+  margin-top: 20px;
   margin-bottom: 0px;
 }
 .adress-list .link {
@@ -295,7 +294,7 @@ p {
   margin-top: 9px;
 }
 /*-------------------------------------PORTFOLIO------------*/
-/*----------------------------MENU----------------------------*/
+/*----------------------------FUNCTIONS----------------------------*/
 .section {
   background: #ffffff;
 }
@@ -360,9 +359,12 @@ p {
 }
 .all-list .feature {
   padding: 20px 24px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .all-list .title {
-  padding-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -370,10 +372,6 @@ p {
   color: var(--all-item-name-color);
 }
 .all-list .text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 20px;
-  padding-left: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
